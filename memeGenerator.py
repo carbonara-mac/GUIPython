@@ -1,5 +1,6 @@
+#Imports--------------------------------------------------
 from guizero import App, TextBox, Drawing, Combo, Slider
-
+#Functions------------------------------------------------
 def draw_meme():
     meme.clear()
     meme.image(0,0, image.value)
@@ -11,7 +12,7 @@ def draw_meme():
     color= color.value,
     size=size.value,
     font=font.value)
-
+#App----------------------------------------------------
 app = App("meme")
 
 top_text = TextBox(app, "top text", command=draw_meme)
